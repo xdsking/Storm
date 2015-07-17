@@ -15,7 +15,7 @@
 </head>
 <body role="document">
 <div id="videoPane">
-    <div class="toolBarPane" oncontextmenu="return false" onselectstart="return false">
+    <div class="topToolBarPane" oncontextmenu="return false" onselectstart="return false">
         <span class="toolBarContainer">
             <span class="icon-camera" title="截屏" aria-hidden="true"></span>
             <span class="icon-facetime-video" title="录制" aria-hidden="true"></span>
@@ -25,16 +25,28 @@
             <span class="icon-phone" title="挂断" aria-hidden="true"></span>
         </span>
     </div>
-    <div class="otherToolBarPane">
-        <span id="show" class="icon-camera" title="截屏" aria-hidden="true"></span>
-        <span class="icon-facetime-video" title="录制" aria-hidden="true"></span>
-        <span class="icon-volume-up" title="静音" aria-hidden="true"></span>
-        <span class="icon-fullscreen" title="全屏" aria-hidden="true"></span>
-        <span class="icon-random" title="交换" aria-hidden="true"></span>
+    <div class="rightToolBarPane">
+        <span id="operate1" class="icon-camera" title="截屏" aria-hidden="true"></span>
+        <span id="operate2" class="icon-facetime-video" title="录制" aria-hidden="true"></span>
+        <span id="operate3" class="icon-volume-up" title="静音" aria-hidden="true"></span>
+        <span id="operate4" class="icon-fullscreen" title="全屏" aria-hidden="true"></span>
+        <span id="operate5" class="icon-random" title="交换" aria-hidden="true"></span>
     </div>
 </div>
-<div class="otherPane">
-    <span id="removePane" class="icon-remove"></span>
+<div id="operatePane1" class="operatePane">面板1
+    <span class="icon-remove closePane"></span>
+</div>
+<div id="operatePane2" class="operatePane">面板2
+    <span class="icon-remove closePane"></span>
+</div>
+<div id="operatePane3" class="operatePane">面板3
+    <span class="icon-remove closePane"></span>
+</div>
+<div id="operatePane4" class="operatePane">面板4
+    <span class="icon-remove closePane"></span>
+</div>
+<div id="operatePane5" class="operatePane">面板5
+    <span class="icon-remove closePane"></span>
 </div>
 <script type="application/javascript" src="../CDN/lib/jQuery/jQuery-1.11.1.js"></script>
 <script type="application/javascript" src=../CDN/lib/bootstrap-3.3.0-dist/dist/js/bootstrap.min.js></script>
