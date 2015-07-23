@@ -34,9 +34,12 @@ $(function(){
         flag=showOperatePane($("#operatePane4"),flag);
     });
     $(".closePane").click(function(){
-        $("#videoPane").css("width","100%");
-        $(this.parentNode).css("width","0").fadeToggle();
-        flag=true;
+        var parentNode=this.parentNode;
+        if(!$(parentNode).is(":animated")){
+            $("#videoPane").css("width","100%");
+            $(parentNode).css("width","0").fadeToggle();
+            flag=true;
+        }
     });
     initPanelHeadingEvt();
 });
