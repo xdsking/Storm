@@ -42,7 +42,7 @@ $(function () {
         showOperatePane(operatePane, this);
         //TODO
     });
-    $(".closePane").click(function () {
+    $(".closePane").click(function () {debugger;
         if (!$(this.parentNode).is(":animated")) {
             $("#videoPane").css("width", "100%");
             $(this.parentNode).fadeOut(function () {
